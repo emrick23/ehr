@@ -1,0 +1,236 @@
+<input type="checkbox" name="" id="nav-toggle">
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h2 role="button"><span class="lab la-accusoft"></span> <span><a href="/" style="text-decoration: none;color:white">EHR-CI</a></span></h2>
+    </div>
+    <div class="sidebar-menu">
+        <ul>
+            <li class="li">
+                <a role="button" (click)="showdash()"  class="a active"><span class="lab la-windows"></span><span>Dashboard</span></a>
+            </li>
+            <li class="li">
+                 <a role="button" (click)="showpatient()" class="a" ><span class="las la-user-injured"></span><span>Patients</span></a>
+            </li>
+             <li class="li">
+                 <a role="button" class="a"><span class="lar la-calendar-check"></span><span>Rendez-vous</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" class="a" (click)="ordonance()"><span class="las la-file-contract"></span><span>Ordonnance</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" (click)="profil()" class="a"><span class="las la-user"></span><span>Profile</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" class="a"><span class="las la-sms"></span><span>Messages</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" class="a"><span class="las la-sign-out-alt"></span><span>Deconnexion</span></a>
+             </li>
+   
+        </ul>
+    </div>
+</div>
+
+<!-- le corps -->
+<div class="main-content">
+  <header>
+      <h2>
+          <label for="nav-toggle">
+              <span class="las la-bars"></span>
+          </label>
+          Dashboard
+      </h2>
+      <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" name="" class="" placeholder="Search here">
+      </div>
+      <div class="user-wrapper">
+          <td><img src="/assets/image/franc.jpg" width="30px" height="30px" alt=""></td>
+
+          <div>
+              <h4>Franck Emeric</h4>
+              <small>Pediatre</small>
+          </div>
+      </div>
+  </header>
+
+  <main id="content" >
+      <div class="dash" *ngIf="dash">
+          
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Patients</span>
+                    </div>
+                    <div>
+                    <span class="las la-user-injured"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Rendez-vous</span>
+                    </div>
+                    <div>
+                        <span class="las la-calendar-check"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                <div>
+                    <h1>54</h1>
+                        <span>Operations</span>
+                    </div>
+                    <div>
+                        <span class="las la-cut"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>patients en ligne</span>
+                    </div>
+                    <div>
+                        <span class="las la-globe"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recent-grid">
+                <div class="projets">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Consultations recentes</h3>
+                            <button>voir tout<span class="las la-arrow-right"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>Nom du patient</td>
+                                        <td>Genre</td>
+                                        <td>dernière visite</td>
+                                        <td>Maladie</td>
+                                        <td>Rapport</td>
+                                        <td>Details</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+
+                                        <td>franck</td>
+                                        <td>
+                                            M
+                                        </td>
+                                        <td>12/2/2022</td>
+                                        <td>Fièvre</td>
+                                        <td><span style="color: orange; font-size: 1.8rem;" class="las la-file-pdf"></span></td>
+                                        <td><button role="button">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+
+                                        <td>franck</td>
+                                        <td>
+                                            F
+                                        </td>
+                                        <td>12/2/2022</td>
+                                        <td>Fièvre</td>
+                                        <td><span style="color: orange; font-size: 1.8rem;" class="las la-file-pdf"></span></td>
+                                        <td><button role="button">Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+                                        <td>franck</td>
+                                        <td>
+                                            M
+                                        </td>
+                                        <td>12/2/2022</td>
+                                        <td>Fièvre</td>
+                                        <td><span style="color: orange; font-size: 1.8rem;" class="las la-file-pdf"></span></td>
+                                        <td><button role="button">Details</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer"  >
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>liste de medecins</h3>
+                            <button>voir tout <span class="las la-arrow-right"></span></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Nom du Mèdecin</td>
+                                            <td>status</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+                                            <td>franck</td>
+                                            <td>Absent</td>
+                                        </tr>
+                                        <tr>
+                                        <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+                                        <td>franck</td>
+                                        <td>Absent</td>
+                                    </tr>
+                                    <tr>
+                                            <td><img src="/assets/image/franc.jpg" width="40px" height="40px" alt=""></td>
+                                        <td>franck</td>
+                                        <td>Absent</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Chart">
+                <div class="chart1">
+                <div class="card">
+                    <div class="card-header">
+                            <h2>patients Masculins</h2>
+                    </div>
+                    <div class="card-body">
+                        <canvas  id="canvas"></canvas>
+                    </div>
+                </div>
+                </div>
+                <div class="chart2">
+                <div class="card">
+                    <div class="card-header">
+                            <h2>patients Feminins</h2>
+                    </div>
+                    <div class="card-body">
+                        <canvas  id="can"></canvas>
+                    </div>
+                </div>
+                </div>
+            </div>
+      </div>
+      <div id="patient" class="patient" *ngIf="patient">
+        <app-patients></app-patients>
+      </div>
+      <div id="orde" class="Ordonnance" *ngIf="orde">
+        <app-doctor-medical-prescription></app-doctor-medical-prescription>
+      </div>
+     <div class="profile" *ngIf="profile">
+         <app-doctor-profile></app-doctor-profile>
+     </div>
+  </main>
+</div>

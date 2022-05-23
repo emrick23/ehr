@@ -1,0 +1,54 @@
+.card{
+    margin-top: 1rem;
+    
+}
+#card1{
+    height: 18rem !important;
+}
+.card .single-card .email{
+   margin: 2rem;
+   
+}
+button{
+    left: 1.6rem;
+    position: relative;
+    top: -1rem;
+    padding: 0.6rem;
+    width: 9rem;
+    background: blue;
+    color: white;
+    font-family: "Roboto";
+    border: none;
+    border-radius: 6px;
+}
+input{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    width: 100%;
+    outline: none;
+}
+.btne{
+    top: -0.5rem;
+}
+.profil{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .name{
+        display: grid;
+        padding: 1rem;
+    }
+    
+}
+.role{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .spec{
+        display: grid;
+        padding: 1rem;
+    }
+    
+}

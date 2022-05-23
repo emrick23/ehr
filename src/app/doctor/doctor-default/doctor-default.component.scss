@@ -1,0 +1,28 @@
+.sidebar-brand h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.user-wrapper h4{
+    font-size: 1rem;
+}
+.card-header h3{
+    font-size: 1rem;
+}
+.card-header h3{
+    font-size: 1.3rem;
+}
+.patient{
+    animation: zoom 3s;
+}
+@keyframes zoom {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

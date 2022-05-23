@@ -1,0 +1,120 @@
+<input type="checkbox" name="" id="nav-toggle">
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h2 role="button"><span class="lab la-accusoft"></span> <span><a href="/" style="text-decoration: none;color:white">EHR-CI</a></span></h2>
+    </div>
+    <div class="sidebar-menu">
+        <ul>
+            <li class="li">
+                <a role="button" (click)="showdash()" class="a active"><span class="lab la-windows"></span><span>Dashboard</span></a>
+            </li>
+            <li class="li">
+                 <a role="button"  class="a" ><span class="las la-user-injured"></span><span>Rendez-vous</span></a>
+            </li>
+             <li class="li" hidden>
+                 <a role="button" class="a"><span class="lar la-calendar-check"></span><span>Prescription</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" (click)="showorde()" class="a"><span class="las la-file-contract"></span><span>Ordonnance</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" class="a"><span class="las la-user"></span><span>Profile</span></a>
+             </li>
+             <li class="li">
+                <a role="button" (click)="showsetting()" class="a"><span class="las la-cog"></span><span>setting</span></a>
+            </li>
+             <li class="li" hidden>
+                 <a role="button" class="a"><span class="las la-sms"></span><span>Chat</span></a>
+             </li>
+             <li class="li">
+                 <a role="button" class="a"><span class="las la-sign-out-alt"></span><span>Deconnexion</span></a>
+             </li>
+   
+        </ul>
+    </div>
+</div>
+
+<!-- le corps -->
+<div class="main-content">
+    <header>
+        <h2>
+            <label for="nav-toggle">
+                <span class="las la-bars"></span>
+            </label>
+            Dashboard
+        </h2>
+        <div class="user-wrapper">
+            <img src="/assets/image/franc.jpg" width="30px" height="30px" alt="">
+            <div>
+                <h4>Franck Emeric</h4>
+                <small>Patient</small>
+            </div>
+        </div>
+    </header>
+  
+    <main id="content" >
+        <div class="dash" *ngIf="dash" >
+            <div class="welcome">
+                <div class="img">
+                    <img src="assets/welcome.png" alt="">
+                </div>
+                <div class="text">
+                    <h6>Welcome Back</h6>
+                    <h3>Mr Joes</h3>
+                    <p>
+                        We would like to take this opportunity to welcome you to our practice and to thank you for choosing our physicians to participate in your healthcare. We look forward to providing you with personalized, comprehensive health care focusing on wellness and prevention.
+                    </p>
+                </div>
+            </div>
+              <div class="cardes">
+                  <div class="card-singles">
+                      <div class="tete">
+                          <img src="assets/blood-pressure.png" alt="">
+                          <div class="head">
+                              <strong>Blood pressure</strong>
+                              <h3>110/70</h3>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="card-singles">
+                    <div class="tete">
+                        <img src="assets/heart-rate.png" alt="">
+                        <div class="head">
+                            <strong>Blood pressure</strong>
+                            <h3>650</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card-singles">
+                    <div class="tete">
+                        <img src="assets/glucose.png" alt="">
+                        <div class="head">
+                            <strong>Glucose Level</strong>
+                            <h3>88-75</h3>
+                        </div>
+                    </div>    
+                  </div>
+                  <div class="card-singles">
+                    <div class="tete">
+                        <img src="assets/blood-count.png" alt="">
+                        <div class="head">
+                            <strong>Blood pressure</strong>
+                            <h3>110/70</h3>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="recent-grid">
+                
+              </div>
+        </div>
+        <div class="ordonnance" *ngIf="orde" >
+            <app-patient-prescription></app-patient-prescription>
+        </div>
+        <div class="ordonnance" *ngIf="setting">
+            <app-setting></app-setting>
+        </div>
+    </main> 
+</div>
+  

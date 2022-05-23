@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    align-items: center;
+    background: blue;
+    color: white;
+}
+.doctor{
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    span{
+        margin-right: 3rem;
+    }
+    input{
+        padding: .8rem;
+        outline: none;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        font-family: 'Roboto',sans-serif;
+    }
+}
+.terea{
+    margin-top: 3rem;
+    text-align: center;
+
+    textarea{
+        outline: none;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+.registre{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+
+    button{
+    width: 13rem;
+    padding: 1rem;
+    margin-left: 23rem;
+    font-family: 'Roboto',sans-serif;
+    background: blue;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    }
+}

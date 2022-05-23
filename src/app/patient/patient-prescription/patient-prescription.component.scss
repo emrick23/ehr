@@ -1,0 +1,159 @@
+h6{
+    padding: 0.6rem;
+}
+.card-header{
+    border-bottom: 1px solid #ccc;
+    
+}
+table{
+    width: 100%;
+
+    thead{
+        padding: .2rem;
+        background: #eee;
+    }
+    tbody tr  td a{
+        margin-left: 0.6rem;
+        font-size: 1.8rem;
+
+        .la-cloud-download-alt{
+            color: blue;
+        }
+        .la-eye{
+            color: orangered;
+        }
+        .la-trash-alt{
+            color: red;
+        }
+    }
+    td{
+        border-bottom: 1px solid #ccc;
+    }
+
+}
+
+
+// css Modal
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ccc;
+    background-color: #ccc;
+}
+
+.modalContent {
+    position: relative;
+    left: 6rem;
+    background-color: #fefefe;
+    margin:0 auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.modalClose {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalClose:hover, .modalClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalHeader {
+    padding: 2px 16px;
+    background-color: #b02d33;
+    color: white;
+}
+
+.modalbody {
+    padding: 2px 16px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    align-items: center;
+    background: blue;
+    color: white;
+}
+.doctor{
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    span{
+        margin-right: 3rem;
+    }
+    input{
+        padding: .8rem;
+        outline: none;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        font-family: 'Roboto',sans-serif;
+    }
+}
+.terea{
+    margin-top: 3rem;
+    text-align: center;
+
+    textarea{
+        outline: none;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+.registre{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+
+    button{
+    width: 13rem;
+    padding: 1rem;
+    margin-left: 23rem;
+    font-family: 'Roboto',sans-serif;
+    background: blue;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    }
+}

@@ -1,0 +1,106 @@
+<h6>Ordonnance</h6>
+<div class="card">
+    <div class="card-header">
+        <h6>ordonancea</h6>
+    </div>
+    <div class="card-body">
+       <div class="table-responsive">
+        <table>
+            <thead>
+                <td>#</td>
+                <td>Titre</td>
+                <td>Doctor</td>
+                <td>Date</td>
+                <td>Maladie</td>
+                <td>action</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1244</td>
+                    <td>ordonnance1</td>
+                    <td>Mr Jones</td>
+                    <td>12/05/2021</td>
+                    <td>Fièvre</td>
+                    <td>
+                        <a role="button"><span class="las la-cloud-download-alt"></span></a>
+                        <a role="button" (click)="showModal()"><span class="las la-eye"></span></a>
+                        <a role="button"><span class="las la-trash-alt"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1244</td>
+                    <td>ordonnance2</td>
+                    <td>Mr Jones</td>
+                    <td>12/05/2021</td>
+                    <td>Fièvre</td>
+                    <td>
+                        <a role="button"><span class="las la-cloud-download-alt"></span></a>
+                        <a role="button"><span class="las la-eye"></span></a>
+                        <a role="button"><span class="las la-trash-alt"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1244</td>
+                    <td>ordonnance3</td>
+                    <td>Mr Jones</td>
+                    <td>12/05/2021</td>
+                    <td>Fièvre</td>
+                    <td>
+                        <a role="button"><span class="las la-cloud-download-alt"></span></a>
+                        <a role="button"><span class="las la-eye"></span></a>
+                        <a role="button"><span class="las la-trash-alt"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td>ordonnance4</td>
+                    <td>Mr Jones</td>
+                    <td>12/05/2021</td>
+                    <td>Fièvre</td>
+                    <td>
+                        <a role="button"><span class="las la-cloud-download-alt"></span></a>
+                        <a role="button"><span class="las la-eye"></span></a>
+                        <a role="button"><span class="las la-trash-alt"></span></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </div>
+
+    <!-- modal -->
+<div id="modal">
+    <div class="modalContent">
+        <div class="modalbady">
+            <div class="consult">
+                <div class="card">
+                    <div class="header">
+                      <h1>ehr</h1>
+                      <div class="address">
+                          <h3>HrlMedicale</h3>
+                          <p>Adress: <strong>265 Avennu New York</strong></p>
+                          <p>tel: 346846515155</p>
+                      </div>
+                    </div>
+                    <div class="doctor">
+                        <span>Doctor Name: <strong> Dr Joes</strong></span>
+                        <input type="date" name="date" id="date">
+                        <input type="text" name="patient" id="patient" placeholder="enter patient name">
+                        <input type="text" name="dese" id="dese" placeholder="enter la maladie du patient">
+                    </div>
+                    <div class="terea">
+                        <textarea name="ord" id="ord" cols="100" rows="10" placeholder="Enter your Ordonnance"></textarea>
+                    </div>
+                    <div class="registre">
+                        <div></div>
+                        <button (click)="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+</div>
+
+

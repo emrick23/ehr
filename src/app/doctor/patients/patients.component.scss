@@ -1,0 +1,48 @@
+.content-grid{
+    margin-top: 2rem;
+}
+
+td img{
+    border: 2px solid #ccc;
+}
+tbody td button{
+    border: 1px solid #ccc;
+    background: blue;
+    color: white;
+    height: 3rem;
+    width: 6rem;
+}
+.content-grid{
+    text-align: start;
+}
+.content-grid .card-header{
+        display: inline-block;
+        padding: 20px;
+        background: #ccc; 
+        border:none;  
+}
+.search-wrapper{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 50%;
+    background: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper span{ 
+   display: inline-block;
+   padding: 0rem 1rem;
+   font-size: 1.5rem;
+}
+.search-wrapper input{
+    height: 100%;
+    width: 50%;
+    padding: 0.5em; 
+    outline: none; 
+    border: none;
+}
+table{
+    width: 100%;
+}

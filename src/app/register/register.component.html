@@ -1,0 +1,56 @@
+
+<app-header></app-header>
+<div class="auth-container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="img"></div>
+        </div>
+        <div class="col-lg-6 form ">
+           <div class="col-md-7">
+                <h5>S'enregistrer</h5>
+                 <p>Entrer les details pour créer votre compte</p>
+                    <!--doctor-->
+                        <form >
+                             <!-- Name input -->
+                             <div class="form-outline mb-4">
+                                <input type="text" id="name" name="name"  class="form-control "  />
+                                <label class="form-label" for="name">Entrez votre nom complet </label>
+                            </div>
+                             <!-- Company input -->
+                             <div class="form-outline mb-4">
+                                <input type="text" id="company" name="company"  class="form-control "  />
+                                <label class="form-label" for="email">Hopital</label>
+                            </div>
+                             <!-- Specialite input -->
+                             <div class="form-outline mb-4">
+                                <input type="text" id="specialité" name="specialité"  class="form-control "  />
+                                <label class="form-label" for="email">Votre specialité </label>
+                             </div>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                            <input type="email" id="email" name="mail"  class="form-control "  />
+                            <label class="form-label" for="email">Adresse Email</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                            <input type="password" id="pass" name="password" class="form-control"  />
+                            <label class="form-label" for="pass">Mot de passe</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="cpass" name="cpassword" class="form-control"  />
+                                <label class="form-label" for="cpass">Confirmez  votre mot de passe</label>
+                            </div>
+                            <p style="margin-top: 1rem;">Vous avez un compte?<a href="/login"> Connectez-vous</a></p>
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Se connecter</button>
+
+
+                        </form>
+
+
+           </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

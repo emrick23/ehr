@@ -1,0 +1,31 @@
+#footer{
+    margin-top: 5rem;
+}
+.footer{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background: #eee;
+    border-radius: none;
+
+
+}
+input{
+    height: 3rem;
+    width: 246px;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input:focus{
+    box-shadow: none;
+    outline: none;
+}
+button{
+    height: 3rem;
+    width: 6rem;
+    background:rgba(4, 98, 171, 0.6); 
+    color: white;
+    border: none;
+}
